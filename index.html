@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaylyn's Remote Job Search</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f6f7f9; color: #1a1d21; line-height: 1.5; padding: 20px; }
+.wrap { max-width: 860px; margin: 0 auto; }
+header { margin-bottom: 20px; }
+h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+.sub { color: #5a6472; font-size: 14px; margin-top: 4px; }
+.profile { background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; padding: 14px 16px; margin: 16px 0; font-size: 13px; color: #3a424e; }
+.profile b { color: #1a1d21; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+select { appearance: none; background: #fff; border: 1px solid #d3d8de; border-radius: 8px; padding: 8px 30px 8px 12px; font-size: 13px; color: #1a1d21; cursor: pointer; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' stroke='%235a6472' stroke-width='1.5' fill='none'/></svg>"); background-repeat: no-repeat; background-position: right 10px center; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; align-items: center; }
+.tag { background: #eef1f4; border: 1px solid #dce0e6; border-radius: 999px; padding: 5px 10px 5px 12px; font-size: 12px; color: #3a424e; display: inline-flex; align-items: center; gap: 6px; }
+.tag button { background: none; border: none; cursor: pointer; color: #8a94a2; font-size: 14px; line-height: 1; padding: 0; }
+.tag button:hover { color: #d1435b; }
+.addtag { background: #fff; border: 1px dashed #c3cad3; border-radius: 999px; padding: 5px 12px; font-size: 12px; color: #5a6472; cursor: pointer; }
+.count { font-size: 13px; color: #5a6472; margin-bottom: 4px; }
+.updated { font-size: 12px; color: #8a94a2; margin-bottom: 12px; }
+.card { background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; padding: 16px; margin-bottom: 12px; transition: box-shadow .15s; }
+.card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+.card.down { opacity: 0.45; }
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.card h3 { font-size: 16px; font-weight: 650; }
+.card h3 a { color: #1a1d21; text-decoration: none; }
+.card h3 a:hover { color: #2f6fed; text-decoration: underline; }
+.src { font-size: 13px; color: #5a6472; margin-top: 2px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.badge { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: #eef1f4; color: #4a5361; }
+.badge.live { background: #e6f4ea; color: #1e7d44; }
+.badge.remote { background: #e8f0fe; color: #2f6fed; }
+.badge.focus { background: #f3ecfb; color: #7b3fbf; }
+.badge.salary { background: #fef4e6; color: #b5730f; }
+.badge.applied { background: #1a1d21; color: #fff; }
+.badge.date { background: #eef1f4; color: #5a6472; }
+.rate { display: flex; gap: 6px; }
+.rate button { width: 32px; height: 32px; border: 1px solid #dce0e6; background: #fff; border-radius: 8px; cursor: pointer; font-size: 15px; line-height: 1; display: flex; align-items: center; justify-content: center; }
+.rate button.up.on { background: #e6f4ea; border-color: #1e7d44; }
+.rate button.down.on { background: #fde8ec; border-color: #d1435b; }
+.desc { font-size: 13px; color: #4a5361; margin-top: 10px; }
+.searchbox { margin-top: 20px; background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; overflow: hidden; }
+.searchbox summary { padding: 14px 16px; cursor: pointer; font-size: 14px; font-weight: 600; color: #3a424e; list-style: none; }
+.searchbox summary::-webkit-details-marker { display: none; }
+.searchbox .body { padding: 0 16px 16px; font-size: 13px; color: #4a5361; }
+.searchbox textarea { width: 100%; border: 1px solid #d3d8de; border-radius: 8px; padding: 10px; font-size: 13px; font-family: inherit; resize: vertical; min-height: 70px; margin-top: 8px; }
+.note { font-size: 12px; color: #8a94a2; margin-top: 18px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Kaylyn's Remote Job Search</h1>
+<div class="sub">Fully remote Manager / Senior Manager / Director roles - lifecycle - CRM - retention - email</div>
+</header>
+<div class="profile">
+<b>Kaylyn Murray</b> - Lifecycle, CRM and retention marketing leader, 12+ years. Founder, Hook Digital. Prior: Thirty Madison (Nurx, Keeps, Cove), Function of Beauty, Hawthorne, Elizabeth Arden Red Door Spas. <b>Platforms:</b> Braze, Iterable, Adobe Journey Optimizer, CJA, ActiveCampaign, Slate. <b>Targeting:</b> fully remote US, Manager to Director, health and wellness, DTC, consumer tech.
+</div>
+<div class="controls">
+<select id="f-focus">
+<option value="">All focus areas</option>
+<option value="Lifecycle">Lifecycle</option>
+<option value="CRM">CRM</option>
+<option value="Retention">Retention</option>
+<option value="Email">Email</option>
+</select>
+<select id="f-level">
+<option value="">All levels</option>
+<option value="Manager">Manager</option>
+<option value="Senior Manager">Senior Manager</option>
+<option value="Director">Director</option>
+</select>
+<select id="f-industry">
+<option value="">All industries</option>
+<option value="Health & Wellness">Health &amp; Wellness</option>
+<option value="DTC / Consumer">DTC / Consumer</option>
+<option value="Tech / SaaS">Tech / SaaS</option>
+<option value="Fintech">Fintech</option>
+<option value="Other">Other</option>
+</select>
+<select id="f-salary">
+<option value="0">Any salary</option>
+<option value="100000">$100k+</option>
+<option value="130000">$130k+</option>
+<option value="150000">$150k+</option>
+<option value="180000">$180k+</option>
+<option value="200000">$200k+</option>
+</select>
+</div>
+<div class="tags" id="tags"><button class="addtag" id="addtag">+ Add preference</button></div>
+<div class="count" id="count">Loading postings...</div>
+<div class="updated" id="updated"></div>
+<div id="cards"></div>
+<details class="searchbox">
+<summary>Refine this search</summary>
+<div class="body">Tell me what to change and I'll retune the search - tighter salary floor, drop a company, add a keyword, etc.<textarea id="prompt" placeholder="e.g. only roles paying above $160k, drop B2B SaaS"></textarea></div>
+</details>
+<div class="note">Real postings from Hightouch Lifecycle Leaders, Lifecycle Marketing Jobs, Email Jobs, Lenny's Jobs, and direct employer career pages, curated to Kaylyn's profile. Salary badges appear when a posting lists pay. Refreshed weekly.</div>
+</div>
+<script>
+// Job data is loaded from jobs.json so the weekly refresh only touches the data file.
+let FEEDS = [];
+let LAST_UPDATED = "";
+function fmtDate(iso){ if(!iso) return ""; const d=new Date(iso+"T00:00:00"); if(isNaN(d)) return ""; return d.toLocaleDateString("en-US",{month:"short",day:"numeric"}); }
+const store={ get(k,d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch{ return d; } }, set(k,v){ localStorage.setItem(k,JSON.stringify(v)); } };
+// Ratings are keyed by job URL (stable across refreshes) so thumbs survive weekly updates.
+let ratings=store.get('kaylyn_ratings_v1',{});
+let prefs=store.get('kaylyn_prefs',[]);
+function renderTags(){
+const el=document.getElementById('tags');
+el.querySelectorAll('.tag').forEach(t=>t.remove());
+const addBtn=document.getElementById('addtag');
+prefs.forEach((p,i)=>{
+const t=document.createElement('span');
+t.className='tag';
+t.innerHTML=p+' <button title="remove">&times;</button>';
+t.querySelector('button').onclick=()=>{ prefs.splice(i,1); store.set('kaylyn_prefs',prefs); renderTags(); };
+el.insertBefore(t,addBtn);
+});
+}
+document.getElementById('addtag').onclick=()=>{
+const v=prompt('Add a preference (e.g. no B2B):');
+if(v && v.trim()){ prefs.push(v.trim()); store.set('kaylyn_prefs',prefs); renderTags(); }
+};
+function render(){
+const ff=document.getElementById('f-focus').value;
+const fl=document.getElementById('f-level').value;
+const fi=document.getElementById('f-industry').value;
+const fs=parseInt(document.getElementById('f-salary').value,10)||0;
+const cards=document.getElementById('cards');
+cards.innerHTML='';
+let shown=0;
+FEEDS.forEach((j)=>{
+if(ff && j.focus!==ff) return;
+if(fl && j.level!==fl) return;
+if(fi && j.industry!==fi) return;
+if(fs && j.salaryMin!=null && j.salaryMin<fs) return;
+shown++;
+const dateBadge=j.datePosted?'<span class="badge date">Posted '+fmtDate(j.datePosted)+'</span>':'';
+const appBadge=j.applied?'<span class="badge applied">Applied</span>':'';const salBadge=j.salaryLabel?'<span class="badge salary">'+j.salaryLabel+'</span>':'';
+const _s=j.src||'';const srcName=/Indeed/i.test(_s)?'Indeed':/LinkedIn/i.test(_s)?'LinkedIn':/Hightouch|Lifecycle Leaders/i.test(_s)?'Lifecycle Leaders':/Greenhouse|Lever|Workday|Ashby|Careers/i.test(_s)?'Direct':'Web';const srcBadge='<span class="badge live">'+srcName+'</span>';
+const r=ratings[j.url]||0;
+const c=document.createElement('div');
+c.className='card'+(r===-1?' down':'');
+c.innerHTML='<div class="card-top"><div><h3><a href="'+j.url+'" target="_blank" rel="noopener">'+j.title+'</a></h3><div class="src">'+j.src+'</div></div><div class="rate"><button class="up '+(r===1?'on':'')+'" title="Interested">&#128077;</button><button class="down '+(r===-1?'on':'')+'" title="Not for me">&#128078;</button></div></div><div class="meta">'+appBadge+'<span class="badge remote">Remote</span><span class="badge focus">'+j.focus+'</span><span class="badge">'+j.level+'</span><span class="badge">'+j.industry+'</span>'+salBadge+dateBadge+srcBadge+'</div><div class="desc">'+j.desc+'</div>';
+const btns=c.querySelectorAll('.rate button');
+btns[0].onclick=()=>{ ratings[j.url]=r===1?0:1; store.set('kaylyn_ratings_v1',ratings); render(); };
+btns[1].onclick=()=>{ ratings[j.url]=r===-1?0:-1; store.set('kaylyn_ratings_v1',ratings); render(); };
+cards.appendChild(c);
+});
+document.getElementById('count').textContent=shown+' of '+FEEDS.length+' postings';
+document.getElementById('updated').textContent=LAST_UPDATED?('Last updated '+fmtDate(LAST_UPDATED)+', '+LAST_UPDATED.slice(0,4)):'';
+}
+['f-focus','f-level','f-industry','f-salary'].forEach(id=>document.getElementById(id).onchange=render);
+renderTags();
+fetch('jobs.json?ts='+Date.now())
+.then(r=>r.json())
+.then(data=>{ FEEDS=data.jobs||[]; LAST_UPDATED=data.updated||''; render(); })
+.catch(()=>{ document.getElementById('count').textContent='Could not load postings.'; });
+</script>
+</body>
+</html>
