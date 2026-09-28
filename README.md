@@ -27,14 +27,16 @@ Search terms: "Lifecycle Marketing Manager", "Senior Manager Lifecycle", "Direct
 ## Curation rules
 
 - **Fully remote (US).** Drop hybrid, on-site and non-US. State-restricted remote is allowed only if NY is eligible; say so on the card.
-- **Level: Manager, Senior Manager, Director, Head of.** No coordinator, specialist, associate, VP or CMO.
+- **Level: Manager, Senior Manager, Director, Head of.** No Senior Director, VP, CMO, coordinator, specialist or associate. Drop roles whose top of range is under ~$120K.
 - **Always link the employer's own posting**, never the aggregator.
 - Show salary only when the posting lists it. Never invent salary or dates.
-- Flag roles already applied to: check Gmail application confirmations and the 2026_JobSearch Google Sheet tracker. Set `applied: true` for an exact-role match; note different-role matches in `desc`. Drop roles that rejected her.
+- **Remove roles already applied to** (check Gmail application confirmations and the 2026_JobSearch Google Sheet). A different role at the same company can stay, with a note.
 
-## Liveness rule
+## Liveness rule (critical)
 
-Re-verify every carried-over role each run. Remove anything closed, 404, or no longer on the company's job board.
+Open EVERY link in the logged-in Chrome before publishing. Greenhouse/Lever/Ashby APIs and the fetch tool return stale data: closed Greenhouse jobs redirect to `?error=true` with "The job you are looking for is no longer open". Job-board apply links (emailjobs.io, lifecyclemarketingjobs.com) are often dead; follow them through to the employer page. On LinkedIn, drop anything showing "No longer accepting applications" or older than ~30 days. Only take salary from the posting itself (LinkedIn top card or description), never from sidebar text.
+
+Sources also include LinkedIn (logged in; keywords "lifecycle marketing" OR "CRM marketing" OR "retention marketing", f_WT=2, f_E=4,5, past month) and the Indeed connector. The ZipRecruiter connector errored on 2026-09-28.
 
 ## Dashboard architecture
 
