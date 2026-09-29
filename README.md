@@ -44,3 +44,14 @@ Sources also include LinkedIn (logged in; keywords "lifecycle marketing" OR "CRM
 - Thumbs up/down persist in `localStorage` keyed by job URL (`kaylyn_ratings_v1`).
 - Each job object: `title, src, url, focus, level, industry, salaryMin, salaryLabel, datePosted, desc, applied`.
 - `focus`: Lifecycle / CRM / Retention / Email. `level`: Manager / Senior Manager / Director. `industry`: Health & Wellness / DTC / Consumer / Tech / SaaS / Fintech / Other.
+
+## History log (update every run)
+
+`history.json` is the permanent backlog behind `history.html` (live: /history.html). Never delete roles from it. On every weekly refresh, after `jobs.json` is final:
+
+1. Append a run: `{"date":"YYYY-MM-DD","count":<roles published>,"note":"<one line>"}` to `runs`. If a run is blocked and nothing could be verified, append it with `"count":null` and say why in `note`.
+2. For every role in the new `jobs.json`: if it is already in `roles` (match on company + title), set `lastSeen` to today, add today to `seen`, keep `status:"open"`, refresh `url`/salary if they changed. Otherwise add it with `firstSeen` = `lastSeen` = today, `status:"open"`, `reason:"Still listed on the last verified run"`.
+3. For every role with `status:"open"` that is NOT in the new `jobs.json`: set `status` (`closed` = posting gone or no longer accepting applications, `applied` = found in Gmail or the 2026_JobSearch sheet, `dropped` = no longer fits criteria, `retitled` = same req re-posted under a new title), `removedOn` = today, and a short `reason`.
+4. Set `generated` to today.
+
+Role fields: `company, title, url, focus, level, industry, salaryMin, salaryLabel, datePosted, firstSeen, lastSeen, seen[], status, removedOn, reason`.
