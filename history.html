@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Search History</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f6f7f9; color: #1a1d21; line-height: 1.5; padding: 20px 16px; }
+.wrap { max-width: 1000px; margin: 0 auto; }
+a { color: #2f6fed; }
+.back { font-size: 13px; text-decoration: none; }
+h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin-top: 6px; }
+.sub { color: #5a6472; font-size: 14px; margin-top: 4px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 18px 0; }
+.tile { background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; padding: 12px 14px; }
+.tile .v { font-size: 24px; font-weight: 700; }
+.tile .l { font-size: 12px; color: #5a6472; }
+.panel { background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.panel h2 { font-size: 15px; font-weight: 650; margin-bottom: 10px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.runs { display: flex; align-items: flex-end; gap: 6px; height: 170px; padding-top: 10px; overflow-x: auto; }
+.run { flex: 1 0 44px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+.run .bar { width: 70%; background: #2f6fed; border-radius: 4px 4px 0 0; min-height: 2px; }
+.run .bar.none { background: repeating-linear-gradient(45deg,#dce0e6,#dce0e6 4px,#eef1f4 4px,#eef1f4 8px); height: 24px; }
+.run .n { font-size: 11px; font-weight: 600; margin-bottom: 2px; }
+.run .d { font-size: 10px; color: #5a6472; margin-top: 4px; text-align: center; line-height: 1.2; }
+.hbar { display: grid; grid-template-columns: 130px 1fr 30px; align-items: center; gap: 8px; font-size: 12px; margin-bottom: 6px; }
+.hbar .t { background: #eef1f4; border-radius: 4px; height: 12px; }
+.hbar .f { background: #2f6fed; border-radius: 4px; height: 12px; }
+.hbar .lab { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #3a424e; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; align-items: center; }
+select, input { border: 1px solid #d3d8de; border-radius: 8px; padding: 7px 10px; font-size: 13px; background: #fff; }
+input { flex: 1; min-width: 160px; }
+button { border: 1px solid #d3d8de; background: #fff; border-radius: 8px; padding: 7px 12px; font-size: 13px; cursor: pointer; }
+.tablewrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; min-width: 760px; }
+th { text-align: left; font-weight: 600; color: #5a6472; border-bottom: 1px solid #e4e7eb; padding: 6px; white-space: nowrap; cursor: pointer; }
+td { border-bottom: 1px solid #f0f2f4; padding: 7px 6px; vertical-align: top; }
+td a { color: #1a1d21; font-weight: 600; text-decoration: none; }
+td a:hover { color: #2f6fed; text-decoration: underline; }
+.pill { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 6px; white-space: nowrap; }
+.s-open { background: #e6f4ea; color: #1e7d44; }
+.s-closed { background: #fde8ec; color: #b3263e; }
+.s-applied { background: #1a1d21; color: #fff; }
+.s-dropped, .s-removed, .s-retitled { background: #eef1f4; color: #4a5361; }
+.muted { color: #8a94a2; }
+.note { font-size: 12px; color: #8a94a2; margin-top: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="./">&larr; Back to current roles</a>
+<h1 id="h1">Job Search History</h1>
+<div class="sub" id="sub"></div>
+<div class="tiles" id="tiles"></div>
+<div class="panel"><h2>Roles listed per run</h2><div class="runs" id="runs"></div><div class="note">Striped bars are runs that were blocked and could not check postings.</div></div>
+<div class="grid2">
+<div class="panel"><h2>New roles by month first seen</h2><div id="months"></div></div>
+<div class="panel"><h2>Why roles left the list</h2><div id="status"></div></div>
+<div class="panel"><h2>By level</h2><div id="level"></div></div>
+<div class="panel"><h2>By industry</h2><div id="industry"></div></div>
+<div class="panel"><h2>By focus</h2><div id="focus"></div></div>
+<div class="panel"><h2>Salary floor (roles that list pay)</h2><div id="salary"></div></div>
+</div>
+<div class="panel">
+<h2>Every role ever listed</h2>
+<div class="controls">
+<select id="fs"><option value="">All statuses</option></select>
+<input id="q" placeholder="Search company or title">
+<button id="csv">Download CSV</button>
+</div>
+<div class="tablewrap"><table><thead><tr>
+<th data-k="company">Company</th><th data-k="title">Role</th><th data-k="level">Level</th><th data-k="industry">Industry</th><th data-k="salaryMin">Salary</th><th data-k="firstSeen">First seen</th><th data-k="lastSeen">Last seen</th><th data-k="status">Status</th><th>Why</th>
+</tr></thead><tbody id="tb"></tbody></table></div>
+</div>
+<div class="note" id="foot"></div>
+</div>
+<script>
+const LABEL={open:'Still listed',closed:'Closed',applied:'Applied',dropped:'Dropped',removed:'Gone',retitled:'Retitled'};
+const d10=s=>(s||'').slice(0,10);
+const fmt=s=>{if(!s)return'';const d=new Date(d10(s)+'T00:00:00');return isNaN(d)?s:d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function bars(el,counts){const e=Object.entries(counts).sort((a,b)=>b[1]-a[1]);const m=Math.max(1,...e.map(x=>x[1]));document.getElementById(el).innerHTML=e.map(([k,v])=>'<div class="hbar"><div class="lab" title="'+esc(k)+'">'+esc(k||'Unknown')+'</div><div class="t"><div class="f" style="width:'+(v/m*100)+'%"></div></div><div>'+v+'</div></div>').join('')||'<div class="muted">No data</div>';}
+const cnt=(a,f)=>a.reduce((o,x)=>{const k=f(x);o[k]=(o[k]||0)+1;return o;},{});
+let DATA,sortK='firstSeen',sortDir=-1;
+function table(){const fs=document.getElementById('fs').value,q=document.getElementById('q').value.toLowerCase();
+const rows=DATA.roles.filter(r=>(!fs||r.status===fs)&&(!q||(r.company+' '+r.title).toLowerCase().includes(q))).sort((a,b)=>{const x=a[sortK]??'',y=b[sortK]??'';return (x>y?1:x<y?-1:0)*sortDir;});
+document.getElementById('tb').innerHTML=rows.map(r=>'<tr><td>'+esc(r.company)+'</td><td>'+(r.url?'<a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.title)+'</a>':esc(r.title))+'</td><td>'+esc(r.level)+'</td><td>'+esc(r.industry)+'</td><td>'+(esc(r.salaryLabel)||'<span class="muted">n/a</span>')+'</td><td>'+fmt(r.firstSeen)+'</td><td>'+fmt(r.lastSeen)+'</td><td><span class="pill s-'+r.status+'">'+(LABEL[r.status]||r.status)+'</span></td><td class="muted">'+esc(r.reason)+'</td></tr>').join('');}
+function csv(){const k=['company','title','url','focus','level','industry','salaryLabel','salaryMin','datePosted','firstSeen','lastSeen','status','reason'];
+const s=[k.join(',')].concat(DATA.roles.map(r=>k.map(x=>'"'+String(r[x]??'').replace(/"/g,'""')+'"').join(','))).join('\n');
+const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/csv'}));a.download=(DATA.person||'job')+'-search-history.csv';a.click();}
+fetch('history.json?ts='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const R=d.roles;
+document.title=d.person+"'s Job Search History";document.getElementById('h1').textContent=d.person+"'s Job Search History";
+const runs=d.runs.filter(x=>x.count!=null);document.getElementById('sub').textContent='Every role that has appeared on the dashboard since '+fmt(d.runs[0].date)+'. Last updated '+fmt(d.generated)+'.';
+const gone=R.filter(r=>r.status!=='open');const spans=gone.filter(r=>r.lastSeen).map(r=>(new Date(d10(r.lastSeen))-new Date(d10(r.firstSeen)))/864e5);
+const avg=spans.length?Math.round(spans.reduce((a,b)=>a+b,0)/spans.length):0;
+const sal=R.filter(r=>r.salaryMin).map(r=>r.salaryMin).sort((a,b)=>a-b);const med=sal.length?sal[Math.floor(sal.length/2)]:null;
+document.getElementById('tiles').innerHTML=[[R.length,'Roles tracked'],[R.filter(r=>r.status==='open').length,'Still listed'],[R.filter(r=>r.status==='closed').length,'Closed'],[runs.length+' / '+d.runs.length,'Runs with data'],[avg+' days','Avg time on list before leaving'],[med?'$'+Math.round(med/1000)+'K':'n/a','Median salary floor']].map(([v,l])=>'<div class="tile"><div class="v">'+v+'</div><div class="l">'+l+'</div></div>').join('');
+const mx=Math.max(1,...runs.map(x=>x.count));
+document.getElementById('runs').innerHTML=d.runs.map(x=>'<div class="run" title="'+esc(x.note)+'">'+(x.count!=null?'<div class="n">'+x.count+'</div><div class="bar" style="height:'+(x.count/mx*120)+'px"></div>':'<div class="n muted">-</div><div class="bar none"></div>')+'<div class="d">'+esc(x.date.slice(5,10))+(x.date.length>10?'<br>'+esc(x.date.slice(11)):'')+'</div></div>').join('');
+bars('months',cnt(R,r=>new Date(d10(r.firstSeen)+'T00:00:00').toLocaleDateString('en-US',{month:'short',year:'numeric'})));
+bars('status',cnt(gone,r=>LABEL[r.status]||r.status));bars('level',cnt(R,r=>r.level));bars('industry',cnt(R,r=>r.industry));bars('focus',cnt(R,r=>r.focus));
+bars('salary',cnt(R.filter(r=>r.salaryMin),r=>{const k=Math.floor(r.salaryMin/25000)*25;return '$'+k+'K-$'+(k+25)+'K';}));
+const st=[...new Set(R.map(r=>r.status))];document.getElementById('fs').innerHTML+=st.map(s=>'<option value="'+s+'">'+(LABEL[s]||s)+'</option>').join('');
+document.getElementById('foot').textContent='"Still listed" means the role was on the most recent verified run; it is not rechecked here. Dates come from each dashboard refresh.';
+table();});
+document.getElementById('fs').onchange=table;document.getElementById('q').oninput=table;document.getElementById('csv').onclick=csv;
+document.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{const k=th.dataset.k;sortDir=sortK===k?-sortDir:1;sortK=k;table();});
+</script>
+</body>
+</html>
