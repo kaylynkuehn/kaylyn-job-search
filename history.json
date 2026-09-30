@@ -473,9 +473,9 @@
    "seen": [
     "2026-09-28 final"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "applied",
+   "removedOn": "2026-09-29",
+   "reason": "Applied Sep 29 via Ashby",
    "daysListed": null
   },
   {
