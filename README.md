@@ -55,3 +55,40 @@ Sources also include LinkedIn (logged in; keywords "lifecycle marketing" OR "CRM
 4. Set `generated` to today.
 
 Role fields: `company, title, url, focus, level, industry, salaryMin, salaryLabel, datePosted, firstSeen, lastSeen, seen[], status, removedOn, reason`.
+
+## Search method (updated 2026-10-05). This section overrides anything above that conflicts.
+
+Kaylyn should never have to find roles herself and add them. The refresh must find them first. A run on 2026-10-05 missed five good roles she had saved on LinkedIn because the search used exact phrases, a 7-day window and a seniority filter. Do not repeat that.
+
+### Step 0: LinkedIn Job tracker (every run, before searching)
+
+Open https://www.linkedin.com/jobs-tracker/?stage=saved in her Chrome and page through every Saved job (click Next until done), then the In Progress tab. Add every role that is open, fully remote (US) and Manager / Senior Manager / Lead / Director level. In the card description say "From your LinkedIn saved jobs". If a saved role fits but the searches below did not find it, work out why and widen the searches.
+
+### Step 1: LinkedIn searches (in her Chrome, logged in)
+
+Run FOUR separate searches, one keyword each, NOT quoted exact phrases:
+
+1. lifecycle
+2. retention marketing
+3. CRM marketing
+4. email marketing
+
+Settings for each: Remote (f_WT=2), United States, past 2 weeks (f_TPR=r1209600), sorted by date, and NO experience-level filter (do not use f_E). Page through all results (start=0, 25, 50 ...). Screen level, pay and remote status yourself from each posting.
+
+Titles that count even without the words "lifecycle marketing": Director of Retention, Head of Retention, Senior Lifecycle Manager, Lifecycle Lead, CRM Lead, Director of CRM, Email & Lifecycle, Lifecycle and Expansion, Customer Marketing with lifecycle ownership. "Lead" titles are good; include them.
+
+LinkedIn mechanics: job pages only load the description after a real screenshot or scroll, not a JS scroll. The page shows "Applied" when she has applied; drop those. Take salary only from the top card or description.
+
+### Step 2: Other sources
+
+Hightouch Lifecycle Leaders (pages 1 to 3), lifecyclemarketingjobs.com/jobs, emailjobs.io, Indeed connector.
+
+### Known broken sources. Tell Kaylyn about these at the START of the next run, then try to fix them.
+
+- **ZipRecruiter connector**: returns "Structured content does not match schema". It has contributed nothing so far.
+- **Lenny's Jobs** (lennysjobs.com): search URLs redirect to the generic TrueUp board without filters. It needs the filters set by hand in the page (Marketing & Growth, Remote US, then search Lifecycle, Retention, CRM). Not searched on 2026-10-05.
+- **Indeed connector**: works, but keyword matching is loose and has returned almost nothing relevant. Try exact titles ("Lifecycle Marketing Manager", "Director of Lifecycle Marketing", "CRM Manager", "Retention Marketing Manager").
+
+### After each run
+
+Report to Kaylyn: what each source returned, anything in her saved list that the searches missed and why, and which sources were broken.
