@@ -14,8 +14,8 @@
   },
   {
    "date": "2026-10-05",
-   "count": 19,
-   "note": "Weekly refresh: 7 closed, 9 new, 10 carried over. Lenny's Jobs not searched this run."
+   "count": 23,
+   "note": "Weekly refresh: 7 closed, 14 new (5 from the LinkedIn Job tracker saved list), 10 carried over. Evolve applied same day."
   }
  ],
  "roles": [
@@ -768,9 +768,9 @@
    "seen": [
     "2026-10-05"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "applied",
+   "removedOn": "2026-10-05",
+   "reason": "Applied Oct 5",
    "daysListed": null
   },
   {
@@ -931,6 +931,106 @@
    "status": "applied",
    "removedOn": "2026-10-05",
    "reason": "Not listed: you applied Sep 28 (Gmail confirmation)",
+   "daysListed": null
+  },
+  {
+   "company": "Llama Naturals",
+   "title": "Director of Retention",
+   "url": "https://www.linkedin.com/jobs/view/4469667971/",
+   "focus": "Retention",
+   "level": "Director",
+   "industry": "DTC / Consumer",
+   "salaryMin": 150000,
+   "salaryLabel": "$150K-$200K",
+   "datePosted": null,
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "BenefitHub",
+   "title": "Director, Email & Lifecycle Marketing (REMOTE)",
+   "url": "https://www.linkedin.com/jobs/view/4469014578/",
+   "focus": "Email",
+   "level": "Director",
+   "industry": "Tech / SaaS",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Consensus",
+   "title": "Lifecycle and Expansion Marketing Director",
+   "url": "https://www.linkedin.com/jobs/view/4462035146/",
+   "focus": "Lifecycle",
+   "level": "Director",
+   "industry": "Tech / SaaS",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Alloy Health",
+   "title": "Senior Lifecycle Manager, Retention",
+   "url": "https://www.linkedin.com/jobs/view/4472293230/",
+   "focus": "Retention",
+   "level": "Senior Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": 117000,
+   "salaryLabel": "$117K-$175K",
+   "datePosted": null,
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Time Doctor",
+   "title": "Lifecycle Marketing Manager",
+   "url": "https://www.linkedin.com/jobs/view/4471469100/",
+   "focus": "Lifecycle",
+   "level": "Manager",
+   "industry": "Tech / SaaS",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
    "daysListed": null
   }
  ]
