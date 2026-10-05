@@ -14,8 +14,8 @@
   },
   {
    "date": "2026-10-05",
-   "count": 23,
-   "note": "Weekly refresh: 7 closed, 14 new (5 from the LinkedIn Job tracker saved list), 10 carried over. Evolve applied same day."
+   "count": 22,
+   "note": "Weekly refresh: 7 closed, 14 new (5 from the LinkedIn Job tracker saved list), 10 carried over. Evolve and Capital One applied same day."
   }
  ],
  "roles": [
@@ -748,9 +748,9 @@
    "seen": [
     "2026-10-05"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "applied",
+   "removedOn": "2026-10-05",
+   "reason": "Applied Oct 5",
    "daysListed": null
   },
   {
