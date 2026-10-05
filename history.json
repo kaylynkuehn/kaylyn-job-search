@@ -1,6 +1,6 @@
 {
  "person": "Kaylyn",
- "generated": "2026-09-29",
+ "generated": "2026-10-05",
  "runs": [
   {
    "date": "2026-09-28 draft",
@@ -11,6 +11,11 @@
    "date": "2026-09-28 final",
    "count": 18,
    "note": "Every link opened in Chrome; applied, Senior Director and closed roles removed"
+  },
+  {
+   "date": "2026-10-05",
+   "count": 19,
+   "note": "Weekly refresh: 7 closed, 9 new, 10 carried over. Lenny's Jobs not searched this run."
   }
  ],
  "roles": [
@@ -96,7 +101,7 @@
   },
   {
    "company": "EverCommerce",
-   "title": "Marketing Automation Manager",
+   "title": "EverPro - Marketing Automation Manager",
    "url": "https://evercommerce.wd1.myworkdayjobs.com/EverCommerce_Careers/job/Remote--US/EverCommerce---Marketing-Automation-Manager_R-106482",
    "focus": "Lifecycle",
    "level": "Manager",
@@ -105,10 +110,11 @@
    "salaryLabel": "$115K-$125K",
    "datePosted": null,
    "firstSeen": "2026-09-28 draft",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
     "2026-09-28 draft",
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -186,10 +192,11 @@
    "salaryLabel": "$140K-$160K",
    "datePosted": "2026-09-02",
    "firstSeen": "2026-09-28 draft",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
     "2026-09-28 draft",
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -267,10 +274,11 @@
    "salaryLabel": "$100K-$135K",
    "datePosted": "2026-09-19",
    "firstSeen": "2026-09-28 draft",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
     "2026-09-28 draft",
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -333,9 +341,9 @@
     "2026-09-28 draft",
     "2026-09-28 final"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-10-05",
+   "reason": "Closed: Signet page gone and LinkedIn not accepting applications",
    "daysListed": null
   },
   {
@@ -449,9 +457,10 @@
    "salaryLabel": "",
    "datePosted": "2026-09-25",
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -489,9 +498,10 @@
    "salaryLabel": "",
    "datePosted": "2026-09-26",
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -509,9 +519,10 @@
    "salaryLabel": "",
    "datePosted": "2026-09-24",
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -529,9 +540,10 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -553,9 +565,9 @@
    "seen": [
     "2026-09-28 final"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-10-05",
+   "reason": "Closed: LinkedIn \"No longer accepting applications\"",
    "daysListed": null
   },
   {
@@ -569,9 +581,10 @@
    "salaryLabel": "$104K-$144K",
    "datePosted": null,
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -593,9 +606,9 @@
    "seen": [
     "2026-09-28 final"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-10-05",
+   "reason": "Closed: LinkedIn \"No longer accepting applications\"",
    "daysListed": null
   },
   {
@@ -613,9 +626,9 @@
    "seen": [
     "2026-09-28 final"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-10-05",
+   "reason": "Closed: LinkedIn \"Not currently accepting applications\"",
    "daysListed": null
   },
   {
@@ -629,9 +642,10 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
@@ -653,9 +667,9 @@
    "seen": [
     "2026-09-28 final"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-10-05",
+   "reason": "Closed: LinkedIn \"No longer accepting applications\"",
    "daysListed": null
   },
   {
@@ -673,9 +687,9 @@
    "seen": [
     "2026-09-28 final"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-10-05",
+   "reason": "Closed: LinkedIn \"Not currently accepting applications\"",
    "daysListed": null
   },
   {
@@ -693,9 +707,9 @@
    "seen": [
     "2026-09-28 final"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-10-05",
+   "reason": "Closed: Indeed shows \"This job has expired\"",
    "daysListed": null
   },
   {
@@ -709,13 +723,214 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-09-28 final",
+   "lastSeen": "2026-10-05",
    "seen": [
-    "2026-09-28 final"
+    "2026-09-28 final",
+    "2026-10-05"
    ],
    "status": "open",
    "removedOn": null,
    "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Capital One",
+   "title": "Referral & Lifecycle Marketing Lead, Capital One Shopping (Remote-Eligible)",
+   "url": "https://www.linkedin.com/jobs/view/4466308386/",
+   "focus": "Lifecycle",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": 230400,
+   "salaryLabel": "$230.4K-$286.9K",
+   "datePosted": "2026-10-02",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Evolve",
+   "title": "Senior Manager, Lifecycle Marketing",
+   "url": "https://job-boards.greenhouse.io/evolvevacationrental/jobs/8012090003",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Other",
+   "salaryMin": 160000,
+   "salaryLabel": "$160K-$190K",
+   "datePosted": "2026-10-03",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Docker",
+   "title": "Senior Lifecycle Marketing Manager",
+   "url": "https://jobs.ashbyhq.com/docker/e3a8152f-4090-4114-8072-ad4e566b6e29",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Tech / SaaS",
+   "salaryMin": 115500,
+   "salaryLabel": "$115.5K-$165K",
+   "datePosted": "2026-10-03",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Mirage",
+   "title": "Lifecycle Marketing Lead",
+   "url": "https://jobs.ashbyhq.com/mirage/27fba0a7-695d-4aba-9fe6-2de8215314b6",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Tech / SaaS",
+   "salaryMin": 100000,
+   "salaryLabel": "$100K-$200K",
+   "datePosted": "2026-10-03",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Sequencing",
+   "title": "Senior Lifecycle Marketing Manager",
+   "url": "https://jobs.ashbyhq.com/sequencing/eb582457-5de3-42df-8a80-67fec80c56a7",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-10-01",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Progyny",
+   "title": "Senior Manager, Employer Growth & Lifecycle Marketing",
+   "url": "https://www.linkedin.com/jobs/view/4474781135/",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": 110000,
+   "salaryLabel": "$110K-$125K",
+   "datePosted": "2026-10-02",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "eMoney Advisor",
+   "title": "Enterprise Retention Marketing Manager",
+   "url": "https://job-boards.greenhouse.io/emoneyadvisor/jobs/4415265009",
+   "focus": "Retention",
+   "level": "Manager",
+   "industry": "Fintech",
+   "salaryMin": 93000,
+   "salaryLabel": "$93K-$145K",
+   "datePosted": "2026-09-30",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "PrizePicks",
+   "title": "Manager, CRM Marketing",
+   "url": "https://www.linkedin.com/jobs/view/4472332574/",
+   "focus": "CRM",
+   "level": "Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": 110000,
+   "salaryLabel": "$110K-$130K",
+   "datePosted": "2026-10-01",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Goldie Locks",
+   "title": "Retention & Lifecycle Marketing Manager (Email + SMS)",
+   "url": "https://www.linkedin.com/jobs/view/4474311323/",
+   "focus": "Retention",
+   "level": "Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-10-01",
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Boulder Care",
+   "title": "Senior Lifecycle Marketing Manager",
+   "url": "https://job-boards.greenhouse.io/bouldercare/jobs/5421752008",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": 140000,
+   "salaryLabel": "$140K-$155K",
+   "datePosted": null,
+   "firstSeen": "2026-10-05",
+   "lastSeen": "2026-10-05",
+   "seen": [
+    "2026-10-05"
+   ],
+   "status": "applied",
+   "removedOn": "2026-10-05",
+   "reason": "Not listed: you applied Sep 28 (Gmail confirmation)",
    "daysListed": null
   }
  ]
