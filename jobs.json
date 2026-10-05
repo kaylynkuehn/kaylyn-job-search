@@ -26,6 +26,42 @@
       "desc": "Lead role on Capital One Shopping, a consumer shopping and savings product. Listed as remote-eligible. Pay shown in the posting varies by location ($230.4K-$263K and $251.4K-$286.9K)."
     },
     {
+      "title": "Director of Retention",
+      "src": "Llama Naturals - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4469667971/",
+      "focus": "Retention",
+      "level": "Director",
+      "industry": "DTC / Consumer",
+      "salaryMin": 150000,
+      "salaryLabel": "$150K-$200K",
+      "datePosted": null,
+      "desc": "From your LinkedIn saved jobs. Owns the full post-purchase journey across email, SMS and on-site for a kids and family vitamin brand. Remote US, LinkedIn Easy Apply. Klaviyo named."
+    },
+    {
+      "title": "Director, Email & Lifecycle Marketing (REMOTE)",
+      "src": "BenefitHub - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4469014578/",
+      "focus": "Email",
+      "level": "Director",
+      "industry": "Tech / SaaS",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "From your LinkedIn saved jobs. Leads email and lifecycle for a perks and benefits platform with members in 22 markets. Remote. Iterable named. No salary listed."
+    },
+    {
+      "title": "Lifecycle and Expansion Marketing Director",
+      "src": "Consensus - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4462035146/",
+      "focus": "Lifecycle",
+      "level": "Director",
+      "industry": "Tech / SaaS",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "From your LinkedIn saved jobs. B2B lifecycle and expansion marketing at a demo platform for sales and marketing teams. Remote US. No salary listed."
+    },
+    {
       "title": "Snr. Manager, Email & Lifecycle Marketing",
       "src": "KnowBe4 - Careers",
       "url": "https://job-boards.greenhouse.io/knowbe4/jobs/8778299002",
@@ -134,6 +170,18 @@
       "desc": "B2B marketing strategy for Progyny's employer audience on the Enterprise Marketing team. LinkedIn lists it as remote. Note: you applied to a different Progyny role (Director, Lifecycle Marketing) earlier this year; it was filled."
     },
     {
+      "title": "Senior Lifecycle Manager, Retention",
+      "src": "Alloy Health - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4472293230/",
+      "focus": "Retention",
+      "level": "Senior Manager",
+      "industry": "Health & Wellness",
+      "salaryMin": 117000,
+      "salaryLabel": "$117K-$175K",
+      "datePosted": null,
+      "desc": "From your LinkedIn saved jobs. Owns active subscriber retention: keeping women on treatment engaged, refilling and adherent. Remote US. Braze named."
+    },
+    {
       "title": "Lifecycle Marketing Manager",
       "src": "Blueroot Health - LinkedIn",
       "url": "https://www.linkedin.com/jobs/view/4471861926/",
@@ -228,6 +276,18 @@
       "salaryLabel": "",
       "datePosted": "2026-10-01",
       "desc": "Email and SMS retention for a prestige haircare brand with a team under 20. Remote US, LinkedIn Easy Apply. Klaviyo named. No salary listed."
+    },
+    {
+      "title": "Lifecycle Marketing Manager",
+      "src": "Time Doctor - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4471469100/",
+      "focus": "Lifecycle",
+      "level": "Manager",
+      "industry": "Tech / SaaS",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "From your LinkedIn saved jobs. Lifecycle marketing for a workforce analytics product, reporting to the Director of Revenue Marketing. Remote with at least 4 hours overlap with US Eastern. HubSpot named. No salary listed."
     }
   ]
 }
