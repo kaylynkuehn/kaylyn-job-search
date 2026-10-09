@@ -1,6 +1,6 @@
 {
  "person": "Kaylyn",
- "generated": "2026-10-05",
+ "generated": "2026-10-09",
  "runs": [
   {
    "date": "2026-09-28 draft",
@@ -1031,6 +1031,26 @@
    "status": "open",
    "removedOn": null,
    "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Headway",
+   "title": "Lifecycle Marketing Manager",
+   "url": "https://jobs.ashbyhq.com/headway/92b05c3b-400e-4ce2-9f1d-3c5900934d3c",
+   "focus": "Lifecycle",
+   "level": "Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": 121600,
+   "salaryLabel": "$121.6K-$190K",
+   "datePosted": null,
+   "firstSeen": "2026-10-09",
+   "lastSeen": "2026-10-09",
+   "seen": [
+    "2026-10-09"
+   ],
+   "status": "applied",
+   "removedOn": "2026-10-09",
+   "reason": "Kaylyn found it on lifecyclemarketingjobs.com and applied; logged Oct 9. Never shown on the dashboard.",
    "daysListed": null
   }
  ]
