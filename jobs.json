@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-19",
   "jobs": [
     {
       "title": "Director of Lifecycle Marketing",
@@ -12,18 +12,6 @@
       "salaryLabel": "",
       "datePosted": null,
       "desc": "Leads lifecycle marketing on Upstart's Growth team at an AI lending marketplace. Remote, East or West Coast time zones; pay not shown on the posting."
-    },
-    {
-      "title": "Director of Retention",
-      "src": "Llama Naturals - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/4469667971/",
-      "focus": "Retention",
-      "level": "Director",
-      "industry": "DTC / Consumer",
-      "salaryMin": 150000,
-      "salaryLabel": "$150K-$200K",
-      "datePosted": null,
-      "desc": "From your LinkedIn saved jobs. Owns the full post-purchase journey across email, SMS and on-site for a kids and family vitamin brand. Remote US, LinkedIn Easy Apply. Klaviyo named."
     },
     {
       "title": "Director, Email & Lifecycle Marketing (REMOTE)",
@@ -50,16 +38,52 @@
       "desc": "From your LinkedIn saved jobs. B2B lifecycle and expansion marketing at a demo platform for sales and marketing teams. Remote US. No salary listed."
     },
     {
+      "title": "Director of Retention & Customer Lifecycle",
+      "src": "Bask and Lather Co - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4479601563/",
+      "focus": "Retention",
+      "level": "Director",
+      "industry": "DTC / Consumer",
+      "salaryMin": 180000,
+      "salaryLabel": "$180K-$200K",
+      "datePosted": null,
+      "desc": "Owns retention and customer lifecycle at a DTC hair care brand. Remote (listed Yonkers, NY). Names Klaviyo. Posted Oct 17."
+    },
+    {
+      "title": "Director of Marketing",
+      "src": "Parsley Health - Careers",
+      "url": "https://job-boards.greenhouse.io/parsleyhealth/jobs/8033283003",
+      "focus": "Lifecycle",
+      "level": "Director",
+      "industry": "Health & Wellness",
+      "salaryMin": 160000,
+      "salaryLabel": "$160K-$190K",
+      "datePosted": null,
+      "desc": "Broad marketing director role at a holistic primary care company that includes lifecycle and CRM. Remote US, Eastern or Central time preferred."
+    },
+    {
+      "title": "Director, VIP Experience & Loyalty",
+      "src": "PrizePicks - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4479618729/",
+      "focus": "Retention",
+      "level": "Director",
+      "industry": "Other",
+      "salaryMin": 140000,
+      "salaryLabel": "$140K-$180K",
+      "datePosted": null,
+      "desc": "Runs VIP and loyalty programs at a daily fantasy sports app. Listed Atlanta; posting says open to remote candidates anywhere in the US."
+    },
+    {
       "title": "Snr. Manager, Email & Lifecycle Marketing",
-      "src": "KnowBe4 - Careers",
-      "url": "https://job-boards.greenhouse.io/knowbe4/jobs/8778299002",
+      "src": "KnowBe4 - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4461326095/",
       "focus": "Email",
       "level": "Senior Manager",
       "industry": "Tech / SaaS",
       "salaryMin": 140000,
       "salaryLabel": "$140K-$160K",
       "datePosted": "2026-09-02",
-      "desc": "Owns email and lifecycle strategy across the B2B journey with a focus on pipeline and retention. Remote, US only, $140K-$160K. Application deadline Oct 1."
+      "desc": "Senior manager for email and lifecycle marketing at a security awareness training company. Greenhouse link closed, but LinkedIn shows it reposted Oct 16 and open. Names Salesforce and HubSpot. Base $140K-$160K."
     },
     {
       "title": "Senior Lifecycle Marketing Manager",
@@ -122,18 +146,6 @@
       "desc": "Lifecycle lead at an AI video company (maker of Captions). NYC or US remote. Iterable named."
     },
     {
-      "title": "Senior Lifecycle Marketing Manager",
-      "src": "Sequencing - Careers",
-      "url": "https://jobs.ashbyhq.com/sequencing/eb582457-5de3-42df-8a80-67fec80c56a7",
-      "focus": "Lifecycle",
-      "level": "Senior Manager",
-      "industry": "Health & Wellness",
-      "salaryMin": null,
-      "salaryLabel": "",
-      "datePosted": "2026-10-01",
-      "desc": "Own lifecycle strategy across activation, engagement, retention, win-back and referral for a DTC whole genome sequencing subscription. Remote US. Braze, Iterable and Klaviyo named."
-    },
-    {
       "title": "Senior Manager, Employer Growth & Lifecycle Marketing",
       "src": "Progyny - LinkedIn",
       "url": "https://www.linkedin.com/jobs/view/4474781135/",
@@ -146,16 +158,148 @@
       "desc": "B2B marketing strategy for Progyny's employer audience on the Enterprise Marketing team. LinkedIn lists it as remote. Note: you applied to a different Progyny role (Director, Lifecycle Marketing) earlier this year; it was filled."
     },
     {
-      "title": "Senior Lifecycle Manager, Retention",
-      "src": "Alloy Health - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/4472293230/",
-      "focus": "Retention",
+      "title": "Senior Manager, Consumer Lifecycle Marketing",
+      "src": "Credit Acceptance - Careers (Workday)",
+      "url": "https://creditacceptance.wd5.myworkdayjobs.com/Credit_Acceptance/job/USA---Remote/Senior-Manager--Consumer-Lifecycle-Marketing_R13993",
+      "focus": "Lifecycle",
+      "level": "Senior Manager",
+      "industry": "Fintech",
+      "salaryMin": 165000,
+      "salaryLabel": "$165K-$192K",
+      "datePosted": null,
+      "desc": "Leads consumer lifecycle marketing at an auto finance lender. USA Remote. Posted about Oct 15. Base plus annual bonus."
+    },
+    {
+      "title": "Senior Lifecycle Marketing Manager",
+      "src": "Gusto - ZipRecruiter",
+      "url": "https://www.ziprecruiter.com/jobs/v2/eyJsaXN0aW5nX2tleSI6IjlkSHNiWEtxWEhxQTNUay1OUmtpOVEiLCJtYXRjaF9pZCI6IjAxYTE1NGNlLTUwMTYtN2UyYi1iODljLWM0OTY3MDY0MjM0NCIsImJpZF90cmFja2luZ19kYXRhIjoiQUFFV05pTWQxUl80SllIQmptWHlOQnhPaWdjRWlIcGNEOS1xVVh3NDVlXzdPWEcxMndJelpIRURKdWJfb3EzQzJFSVZDNENHVmRaXzM1TW0iLCJzb3VyY2VfcGxhY2VtZW50X2lkIjo4Nzc1M30=?tsid=100000502",
+      "focus": "Lifecycle",
+      "level": "Senior Manager",
+      "industry": "Tech / SaaS",
+      "salaryMin": 158000,
+      "salaryLabel": "$158K-$197K (ZipRecruiter)",
+      "datePosted": null,
+      "desc": "Lifecycle marketing at a payroll and HR software company. Listed Denver with remote option. Names Iterable. Pay is as shown on ZipRecruiter."
+    },
+    {
+      "title": "Senior Lifecycle Marketing Manager",
+      "src": "Leap Health - ZipRecruiter",
+      "url": "https://www.ziprecruiter.com/jobs/v2/eyJsaXN0aW5nX2tleSI6Im9rQjFxQkpFdHkteGJTTEVYazRNRmciLCJtYXRjaF9pZCI6IjAxYTE1NGNlLTUwMTYtN2UyNC1hZmQyLWM0NDg5MGYyNWI2YSIsImJpZF90cmFja2luZ19kYXRhIjoiQUFHSkhGUndOV3o0bHZDTWN4V2lZcjk0WHFOV01RRGE0RHJvcDl6NlNqU2FYMGV1S1Jrc2F6bDhKVDVVS21SemZ4M21lZjNSd0VIanhsUEUiLCJzb3VyY2VfcGxhY2VtZW50X2lkIjo4Nzc1M30=?tsid=100000502",
+      "focus": "Lifecycle",
       "level": "Senior Manager",
       "industry": "Health & Wellness",
-      "salaryMin": 117000,
-      "salaryLabel": "$117K-$175K",
+      "salaryMin": 133000,
+      "salaryLabel": "$133K-$165K (ZipRecruiter)",
       "datePosted": null,
-      "desc": "From your LinkedIn saved jobs. Owns active subscriber retention: keeping women on treatment engaged, refilling and adherent. Remote US. Braze named."
+      "desc": "Lifecycle marketing at a health company. Remote. Names Braze and Iterable. Pay is as shown on ZipRecruiter."
+    },
+    {
+      "title": "Senior Lifecycle Marketing Manager",
+      "src": "MetaMask - ZipRecruiter",
+      "url": "https://www.ziprecruiter.com/jobs/v2/eyJsaXN0aW5nX2tleSI6IkF1VDJtOFU4bzM1TUFSVHNZWDNGTlEiLCJtYXRjaF9pZCI6IjAxYTE1NGNlLTUwMTYtN2UyOS1hYzBmLTY4ZTMwNmYwNzFmYyIsImJpZF90cmFja2luZ19kYXRhIjoiQUFFTFlvaFdpRWw0SFZlMm5CcVBxSTRqQjVmS0NiZVB3N1BiOGdsTUxERmpVQ3JpVENMdEw2WTNuc09oanJvb2hjUGZNN29xV3RNMHhUTlEiLCJzb3VyY2VfcGxhY2VtZW50X2lkIjo4Nzc1M30=?tsid=100000502",
+      "focus": "Lifecycle",
+      "level": "Senior Manager",
+      "industry": "Fintech",
+      "salaryMin": 115000,
+      "salaryLabel": "$115K-$162K (ZipRecruiter)",
+      "datePosted": null,
+      "desc": "Lifecycle marketing for a crypto wallet. Remote. Names Braze. Pay is as shown on ZipRecruiter."
+    },
+    {
+      "title": "Sr Manager of Lifecycle & Retention Marketing",
+      "src": "Ursa Major Skincare - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4476381929/",
+      "focus": "Retention",
+      "level": "Senior Manager",
+      "industry": "DTC / Consumer",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "Owns lifecycle and retention at a clean skincare brand, reporting to the Sr. Director of Ecommerce. From your LinkedIn saved list. Names Klaviyo. Pay not confirmed on the posting."
+    },
+    {
+      "title": "Senior Manager, Lifecycle Marketing",
+      "src": "First Stop Health - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4473258711/",
+      "focus": "Lifecycle",
+      "level": "Senior Manager",
+      "industry": "Health & Wellness",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "Lifecycle marketing at a virtual care company, now listed remote. From your LinkedIn saved list. Names Braze, Iterable and Salesforce. Pay not confirmed."
+    },
+    {
+      "title": "Sr. Manager, Lifecycle Marketing and Engagement",
+      "src": "Tawkify - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4478401133/",
+      "focus": "Lifecycle",
+      "level": "Senior Manager",
+      "industry": "DTC / Consumer",
+      "salaryMin": 120000,
+      "salaryLabel": "Starting at $120K",
+      "datePosted": null,
+      "desc": "Lifecycle and engagement at a matchmaking service. Remote US, Easy Apply. Names Braze and Klaviyo."
+    },
+    {
+      "title": "Senior Lifecycle Marketing Manager, Provider Marketing (Alma)",
+      "src": "Spring Health - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4476693040/",
+      "focus": "Lifecycle",
+      "level": "Senior Manager",
+      "industry": "Health & Wellness",
+      "salaryMin": 121500,
+      "salaryLabel": "$121.5K-$140K",
+      "datePosted": null,
+      "desc": "Lifecycle marketing to therapists on Alma's provider network at a mental health company. Listed New York, remote. Names Iterable."
+    },
+    {
+      "title": "Senior Manager, Member Experience Marketing",
+      "src": "Care Access - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4476075683/",
+      "focus": "Lifecycle",
+      "level": "Senior Manager",
+      "industry": "Health & Wellness",
+      "salaryMin": 110000,
+      "salaryLabel": "$110K-$150K",
+      "datePosted": null,
+      "desc": "Member experience marketing at a clinical research company. Remote US."
+    },
+    {
+      "title": "Sr Manager, CRM Campaign Strategy & Insights",
+      "src": "California Closets - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4479738187/",
+      "focus": "CRM",
+      "level": "Senior Manager",
+      "industry": "DTC / Consumer",
+      "salaryMin": 130000,
+      "salaryLabel": "Starting at $130K",
+      "datePosted": null,
+      "desc": "CRM campaign strategy and insights at a home storage brand. Listed Phoenix, remote. Plus bonus."
+    },
+    {
+      "title": "Senior Email & Subscription Marketing Manager",
+      "src": "Weiss Ratings - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4475233139/",
+      "focus": "Email",
+      "level": "Senior Manager",
+      "industry": "Fintech",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "Email and subscription marketing at a financial ratings and newsletter publisher. Remote, Easy Apply. Names Salesforce. Pay not shown."
+    },
+    {
+      "title": "Sr CRM Manager",
+      "src": "Frontdoor - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4449973856/",
+      "focus": "CRM",
+      "level": "Senior Manager",
+      "industry": "DTC / Consumer",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "CRM at a home warranty company. Remote US. Pay not shown."
     },
     {
       "title": "Lifecycle Marketing Manager",
@@ -206,18 +350,6 @@
       "desc": "Owns the data foundation for lifecycle programs plus campaign execution, deliverability and data quality in Braze and Amplitude. Remote US, $100K-$135K."
     },
     {
-      "title": "EverPro - Marketing Automation Manager",
-      "src": "EverCommerce - Careers (Workday)",
-      "url": "https://evercommerce.wd1.myworkdayjobs.com/EverCommerce_Careers/job/Remote--US/EverCommerce---Marketing-Automation-Manager_R-106482",
-      "focus": "Lifecycle",
-      "level": "Manager",
-      "industry": "Tech / SaaS",
-      "salaryMin": 115000,
-      "salaryLabel": "$115K-$125K",
-      "datePosted": null,
-      "desc": "Designs and runs lifecycle journeys for EverPro, mainly in Marketo. Remote US, $115K-$125K. B2B, weakest fit."
-    },
-    {
       "title": "Enterprise Retention Marketing Manager",
       "src": "eMoney Advisor - Careers",
       "url": "https://job-boards.greenhouse.io/emoneyadvisor/jobs/4415265009",
@@ -264,6 +396,66 @@
       "salaryLabel": "",
       "datePosted": null,
       "desc": "From your LinkedIn saved jobs. Lifecycle marketing for a workforce analytics product, reporting to the Director of Revenue Marketing. Remote with at least 4 hours overlap with US Eastern. HubSpot named. No salary listed."
+    },
+    {
+      "title": "CRM Lead, B2B2C",
+      "src": "Sword Health - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4480566166/",
+      "focus": "CRM",
+      "level": "Manager",
+      "industry": "Health & Wellness",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "CRM lead for a digital physical therapy company's employer-sponsored members. Remote US. Names Braze. Posted Oct 17."
+    },
+    {
+      "title": "Lifecycle & Retention Lead",
+      "src": "Sequencing - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4480573036/",
+      "focus": "Retention",
+      "level": "Manager",
+      "industry": "Health & Wellness",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "Lifecycle and retention lead at a consumer genome sequencing company. Fully remote. Names Braze, Iterable and Klaviyo. Posted Oct 17."
+    },
+    {
+      "title": "Retention & Lifecycle Marketing Manager",
+      "src": "ONNIT - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4479861082/",
+      "focus": "Retention",
+      "level": "Manager",
+      "industry": "DTC / Consumer",
+      "salaryMin": 110000,
+      "salaryLabel": "$110K-$150K",
+      "datePosted": null,
+      "desc": "Retention and lifecycle at a supplements and fitness brand. Remote US. Names Klaviyo."
+    },
+    {
+      "title": "CRM & Retention Marketing Manager",
+      "src": "Petite Keep - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4478740341/",
+      "focus": "CRM",
+      "level": "Manager",
+      "industry": "DTC / Consumer",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "CRM and retention at a jewelry brand. Remote US. Names Klaviyo. Pay not shown."
+    },
+    {
+      "title": "CRM Lifecycle Manager",
+      "src": "Brigit - Careers",
+      "url": "https://jobs.ashbyhq.com/brigit/13d25336-acbc-465f-937d-7625a19d5a5f",
+      "focus": "CRM",
+      "level": "Manager",
+      "industry": "Fintech",
+      "salaryMin": 110000,
+      "salaryLabel": "$110K-$130K",
+      "datePosted": null,
+      "desc": "CRM lifecycle at a consumer financial health app. Remote or NYC hybrid. Names Iterable."
     }
   ]
 }
