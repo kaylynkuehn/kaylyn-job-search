@@ -102,6 +102,21 @@ Screening: drop top of range under ~$120K, Senior Director / VP, specialist / as
 
 prizepicks.com (gambling) is blocked and locks the whole Chrome session until the tab is closed or Chrome restarts. Verify PrizePicks roles through their LinkedIn posting instead.
 
+### Ranking by fit (added 2026-10-19)
+
+Every role in `jobs.json` gets `fit` (score), `fitTier` and `fitWhy`, and `jobs.json` is saved sorted by `fit` (ties: health first, then Director > Senior Manager > Manager, then pay). The dashboard shows the tier badge and the reason, and has a Sort menu (best fit, level, highest pay).
+
+Score = audience + role + level + platforms:
+
+- Audience: consumer health / telehealth / wellness app 4; DTC brand or consumer subscription 3; consumer app or consumer fintech 2; health with an employer, provider or B2B2C audience 1; B2B SaaS, enterprise, agency or unnamed company 0.
+- Role: core lifecycle, CRM or retention role 2; broader marketing role 1.
+- Level: Director or Senior Manager 1; Manager 0.
+- Platforms: Braze or Iterable named in the posting 1.
+
+Tiers: 7+ Top fit, 5 to 6 Good fit, 4 or less Lower fit. Kaylyn's strongest fit is a lifecycle lead at a consumer health brand; B2B and non-DTC roles rank lower.
+
+Also check Gmail for each company on the list (search the company name plus application / moving forward, past year). If she was rejected for the same role, drop it. If she applied or was rejected for a different role at that company, keep it and add a note to `desc`.
+
 ### After each run
 
 Report to Kaylyn: what each source returned, anything in her saved list the searches missed and why, any rejections or applications newly logged, and which sources were broken.
