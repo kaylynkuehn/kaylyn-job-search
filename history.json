@@ -19,8 +19,8 @@
   },
   {
    "date": "2026-10-19",
-   "count": 47,
-   "note": "Weekly refresh plus a second pass with new LinkedIn Boolean searches: 47 roles. Found 11 more the first pass missed; removed BenefitHub and Weiss (already applied on LinkedIn). Logged 48 LinkedIn applications and Gmail rejections."
+   "count": 44,
+   "note": "Weekly refresh plus a second pass with new LinkedIn Boolean searches: 44 roles. Removed BenefitHub, Weiss, Fleetio (already applied), Apartment List and Twin Health (rejections in Gmail). Logged LinkedIn applications and Gmail rejections."
   }
  ],
  "roles": [
@@ -1551,9 +1551,9 @@
    "seen": [
     "2026-10-19"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "",
+   "status": "rejected",
+   "removedOn": "2026-10-19",
+   "reason": "Rejection email 2026-10-05 for this same Director role (applied Aug 31).",
    "daysListed": null
   },
   {
@@ -1651,9 +1651,9 @@
    "seen": [
     "2026-10-19"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "",
+   "status": "applied",
+   "removedOn": "2026-10-19",
+   "reason": "Fleetio application confirmation 2026-09-17. Removed from dashboard Oct 19.",
    "daysListed": null
   },
   {
@@ -1711,9 +1711,9 @@
    "seen": [
     "2026-10-19"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "",
+   "status": "rejected",
+   "removedOn": "2026-10-19",
+   "reason": "Twin passed on you for Active Member Marketing Manager (email 2026-09-18). Removed from dashboard at your request Oct 19.",
    "daysListed": null
   },
   {
@@ -2942,6 +2942,60 @@
    "status": "rejected",
    "removedOn": "2026-10-19",
    "reason": "Interview process ended in a rejection in October. Logged Oct 19.",
+   "daysListed": null
+  },
+  {
+   "company": "Apartment List",
+   "title": "Senior Manager, Lifecycle Marketing",
+   "url": "",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [],
+   "status": "rejected",
+   "removedOn": "2026-02-19",
+   "reason": "Interviewed in Feb 2026; rejection email 2026-02-19. Never shown on the dashboard.",
+   "daysListed": null
+  },
+  {
+   "company": "ClickHouse",
+   "title": "Senior Revenue Marketing Automation Manager",
+   "url": "",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [],
+   "status": "rejected",
+   "removedOn": "2025-11-22",
+   "reason": "Rejection email 2025-11-22. Never shown on the dashboard.",
+   "daysListed": null
+  },
+  {
+   "company": "Progyny",
+   "title": "Director, Lifecycle Marketing",
+   "url": "",
+   "focus": "Lifecycle",
+   "level": "Director",
+   "industry": "",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [],
+   "status": "closed",
+   "removedOn": "2026-07-14",
+   "reason": "Progyny emailed 2026-07-14 that the position was filled. Never shown on the dashboard.",
    "daysListed": null
   }
  ]
