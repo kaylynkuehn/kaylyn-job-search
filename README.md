@@ -56,39 +56,52 @@ Sources also include LinkedIn (logged in; keywords "lifecycle marketing" OR "CRM
 
 Role fields: `company, title, url, focus, level, industry, salaryMin, salaryLabel, datePosted, firstSeen, lastSeen, seen[], status, removedOn, reason`.
 
-## Search method (updated 2026-10-05). This section overrides anything above that conflicts.
+## Search method (updated 2026-10-19). This section overrides anything above that conflicts.
 
-Kaylyn should never have to find roles herself and add them. The refresh must find them first. A run on 2026-10-05 missed five good roles she had saved on LinkedIn because the search used exact phrases, a 7-day window and a seniority filter. Do not repeat that.
+Kaylyn should never have to find roles herself. The refresh must find them first.
 
-### Step 0: LinkedIn Job tracker (every run, before searching)
+### Why runs kept missing roles (diagnosed 2026-10-19)
 
-Open https://www.linkedin.com/jobs-tracker/?stage=saved in her Chrome and page through every Saved job (click Next until done), then the In Progress tab. Add every role that is open, fully remote (US) and Manager / Senior Manager / Lead / Director level. In the card description say "From your LinkedIn saved jobs". If a saved role fits but the searches below did not find it, work out why and widen the searches.
+- **Loose keyword searches drown the real matches.** Unquoted searches like `lifecycle marketing` (Remote, US, 2 weeks) return 2,000 to 3,500 results ranked by "relevance", led by promoted ads. Reading 1 to 2 pages (about 50 cards) missed exact-title roles. Example: Leap "Senior Lifecycle Marketing Manager" (posted 4 days earlier, saved by Kaylyn) never appeared in the first 50.
+- **Window too short for the gap between runs.** Runs were 2 weeks apart but searches used a 1 or 2 week window, so roles posted 2 to 4 weeks earlier (First Stop Health, BenefitHub, Progyny) only showed up because she saved them.
+- **Applied check was incomplete.** Only Gmail was checked; the LinkedIn Applied tab showed she had already applied to BenefitHub, Weiss Ratings and Wander.
 
-### Step 1: LinkedIn searches (in her Chrome, logged in)
+### Step 0: Her trackers (every run, before searching)
 
-Run FOUR separate searches, one keyword each, NOT quoted exact phrases:
+1. LinkedIn Saved: https://www.linkedin.com/jobs-tracker/?stage=saved. Page through every page. Pages after about 3 are mostly "No longer accepting applications"; skip those.
+2. LinkedIn Applied: https://www.linkedin.com/jobs-tracker/?stage=applied. Page through until entries are more than 2 months old. Anything there is excluded from the dashboard and logged in `history.json` as `applied`.
+3. Gmail: search the last 75 days for rejections ("not moving forward", "other candidates", "decided to pursue", "not be moving forward") and application confirmations. Log rejections in `history.json` as `rejected` with the email date.
 
-1. lifecycle
-2. retention marketing
-3. CRM marketing
-4. email marketing
+### Step 1: LinkedIn Boolean searches (the main source)
 
-Settings for each: Remote (f_WT=2), United States, past 2 weeks (f_TPR=r1209600), sorted by date, and NO experience-level filter (do not use f_E). Page through all results (start=0, 25, 50 ...). Screen level, pay and remote status yourself from each posting.
+Use quoted phrases joined with OR, sorted Most recent, Remote, United States, and read EVERY page (the result sets are small, 40 to 120):
 
-Titles that count even without the words "lifecycle marketing": Director of Retention, Head of Retention, Senior Lifecycle Manager, Lifecycle Lead, CRM Lead, Director of CRM, Email & Lifecycle, Lifecycle and Expansion, Customer Marketing with lifecycle ownership. "Lead" titles are good; include them.
+- Search A: `"lifecycle marketing" OR "lifecycle manager" OR "retention marketing" OR "CRM marketing" OR "lifecycle lead"`
+- Search B: `"CRM manager" OR "email marketing manager" OR "retention manager" OR "director of retention" OR "head of retention" OR "director of lifecycle" OR "head of lifecycle" OR "CRM lead" OR "email marketing lead"`
 
-LinkedIn mechanics: job pages only load the description after a real screenshot or scroll, not a JS scroll. The page shows "Applied" when she has applied; drop those. Take salary only from the top card or description.
+URL pattern: `https://www.linkedin.com/jobs/search/?keywords=<urlencoded query>&location=United%20States&f_WT=2&f_TPR=r2592000&sortBy=DD&start=0` then start=25, 50, ...
 
-### Step 2: Other sources
+Window: past month (`f_TPR=r2592000`) every run. On 2026-10-19 Search A returned 115 results and Search B 45; together they surfaced 11 qualifying roles the old method missed.
 
-Hightouch Lifecycle Leaders (pages 1 to 3), lifecyclemarketingjobs.com/jobs, emailjobs.io, Indeed connector.
+Reading cards: the left list is lazy-loaded. Scroll the list container itself (find the scrollable ancestor of `li[data-occludable-job-id]` and step `scrollTop` by 400 with short waits), then read every `li[data-occludable-job-id]`.
 
-### Known broken sources. Tell Kaylyn about these at the START of the next run, then try to fix them.
+Verifying a role without opening its page: load `https://www.linkedin.com/jobs/search/?currentJobId=<id>&keywords=lifecycle` and read the right-hand detail pane (`.jobs-search__job-details--wrapper`). It shows status, workplace type, the top-card salary and the full description, and does not need a screenshot.
 
-- **ZipRecruiter connector**: returns "Structured content does not match schema". It has contributed nothing so far.
-- **Lenny's Jobs** (lennysjobs.com): search URLs redirect to the generic TrueUp board without filters. It needs the filters set by hand in the page (Marketing & Growth, Remote US, then search Lifecycle, Retention, CRM). Not searched on 2026-10-05.
-- **Indeed connector**: works, but keyword matching is loose and has returned almost nothing relevant. Try exact titles ("Lifecycle Marketing Manager", "Director of Lifecycle Marketing", "CRM Manager", "Retention Marketing Manager").
+Screening: drop top of range under ~$120K, Senior Director / VP, specialist / associate / coordinator / account manager, contract or fractional, hybrid or on-site. Agencies and recruiters (Ladders, Jobgether, RemoteHive, "remote quest jobs") repost the same roles; link the employer's own posting instead.
+
+### Step 2: Other sources (secondary)
+
+- Hightouch Lifecycle Leaders, pages 1 to 3.
+- ZipRecruiter connector (working since 2026-10-19): `location_types:["REMOTE"]`, `max_posted_minutes_ago:20160`, `salary_min:120000`. Its salaries are often estimates; only show pay that the posting itself lists.
+- Lenny's Jobs: works when filters are set by hand (clear Job category, type "lifecycle", Location Remote or United States (remote)).
+- Google Jobs (`google.com/search?q=lifecycle+marketing+manager+remote&udm=8`, Date posted: Last week, Remote): mostly aggregator noise but occasionally surfaces a company-site posting. Use as a cross-check only. Her Google "Saved jobs" list is old and expired; ignore it.
+- lifecyclemarketingjobs.com, emailjobs.io: low yield; check quickly.
+- Indeed connector: still noise. Skip unless the others are down.
+
+### Sites the browser extension blocks
+
+prizepicks.com (gambling) is blocked and locks the whole Chrome session until the tab is closed or Chrome restarts. Verify PrizePicks roles through their LinkedIn posting instead.
 
 ### After each run
 
-Report to Kaylyn: what each source returned, anything in her saved list that the searches missed and why, and which sources were broken.
+Report to Kaylyn: what each source returned, anything in her saved list the searches missed and why, any rejections or applications newly logged, and which sources were broken.
