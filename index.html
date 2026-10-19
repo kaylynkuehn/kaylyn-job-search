@@ -39,6 +39,10 @@ select { appearance: none; background: #fff; border: 1px solid #d3d8de; border-r
 .badge.salary { background: #fef4e6; color: #b5730f; }
 .badge.applied { background: #1a1d21; color: #fff; }
 .badge.date { background: #eef1f4; color: #5a6472; }
+.badge.fit-top { background: #1e7d44; color: #fff; }
+.badge.fit-good { background: #e6f4ea; color: #1e7d44; }
+.badge.fit-low { background: #f3f4f6; color: #6b7280; }
+.fitwhy { font-size: 12px; color: #6b7280; margin-top: 6px; }
 .rate { display: flex; gap: 6px; }
 .rate button { width: 32px; height: 32px; border: 1px solid #dce0e6; background: #fff; border-radius: 8px; cursor: pointer; font-size: 15px; line-height: 1; display: flex; align-items: center; justify-content: center; }
 .rate button.up.on { background: #e6f4ea; border-color: #1e7d44; }
@@ -83,6 +87,11 @@ select { appearance: none; background: #fff; border: 1px solid #d3d8de; border-r
 <option value="Tech / SaaS">Tech / SaaS</option>
 <option value="Fintech">Fintech</option>
 <option value="Other">Other</option>
+</select>
+<select id="f-sort">
+<option value="fit">Sort: best fit</option>
+<option value="level">Sort: level</option>
+<option value="pay">Sort: highest pay</option>
 </select>
 <select id="f-salary">
 <option value="0">Any salary</option>
@@ -136,7 +145,8 @@ const fs=parseInt(document.getElementById('f-salary').value,10)||0;
 const cards=document.getElementById('cards');
 cards.innerHTML='';
 let shown=0;
-FEEDS.forEach((j)=>{
+const _so=document.getElementById('f-sort').value; const _lv={"Director":0,"Senior Manager":1,"Manager":2}; const LIST=FEEDS.slice(); if(_so==='level') LIST.sort((a,b)=>(_lv[a.level]-_lv[b.level])||((b.fit||0)-(a.fit||0))); else if(_so==='pay') LIST.sort((a,b)=>(b.salaryMin||0)-(a.salaryMin||0)); else LIST.sort((a,b)=>(b.fit||0)-(a.fit||0));
+LIST.forEach((j)=>{
 if(ff && j.focus!==ff) return;
 if(fl && j.level!==fl) return;
 if(fi && j.industry!==fi) return;
@@ -148,7 +158,7 @@ const _s=j.src||'';const srcName=/Indeed/i.test(_s)?'Indeed':/LinkedIn/i.test(_s
 const r=ratings[j.url]||0;
 const c=document.createElement('div');
 c.className='card'+(r===-1?' down':'');
-c.innerHTML='<div class="card-top"><div><h3><a href="'+j.url+'" target="_blank" rel="noopener">'+j.title+'</a></h3><div class="src">'+j.src+'</div></div><div class="rate"><button class="up '+(r===1?'on':'')+'" title="Interested">&#128077;</button><button class="down '+(r===-1?'on':'')+'" title="Not for me">&#128078;</button></div></div><div class="meta">'+appBadge+'<span class="badge remote">Remote</span><span class="badge focus">'+j.focus+'</span><span class="badge">'+j.level+'</span><span class="badge">'+j.industry+'</span>'+salBadge+dateBadge+srcBadge+'</div><div class="desc">'+j.desc+'</div>';
+c.innerHTML='<div class="card-top"><div><h3><a href="'+j.url+'" target="_blank" rel="noopener">'+j.title+'</a></h3><div class="src">'+j.src+'</div></div><div class="rate"><button class="up '+(r===1?'on':'')+'" title="Interested">&#128077;</button><button class="down '+(r===-1?'on':'')+'" title="Not for me">&#128078;</button></div></div><div class="meta">'+(j.fitTier?'<span class="badge '+(j.fitTier==='Top fit'?'fit-top':j.fitTier==='Good fit'?'fit-good':'fit-low')+'">'+j.fitTier+'</span>':'')+appBadge+'<span class="badge remote">Remote</span><span class="badge focus">'+j.focus+'</span><span class="badge">'+j.level+'</span><span class="badge">'+j.industry+'</span>'+salBadge+dateBadge+srcBadge+'</div><div class="desc">'+j.desc+'</div>'+(j.fitWhy?'<div class="fitwhy">Why this rank: '+j.fitWhy+'</div>':'');
 const btns=c.querySelectorAll('.rate button');
 btns[0].onclick=()=>{ ratings[j.url]=r===1?0:1; store.set('kaylyn_ratings_v1',ratings); render(); };
 btns[1].onclick=()=>{ ratings[j.url]=r===-1?0:-1; store.set('kaylyn_ratings_v1',ratings); render(); };
@@ -157,7 +167,7 @@ cards.appendChild(c);
 document.getElementById('count').textContent=shown+' of '+FEEDS.length+' postings';
 document.getElementById('updated').textContent=LAST_UPDATED?('Last updated '+fmtDate(LAST_UPDATED)+', '+LAST_UPDATED.slice(0,4)):'';
 }
-['f-focus','f-level','f-industry','f-salary'].forEach(id=>document.getElementById(id).onchange=render);
+['f-focus','f-level','f-industry','f-salary','f-sort'].forEach(id=>document.getElementById(id).onchange=render);
 renderTags();
 fetch('jobs.json?ts='+Date.now())
 .then(r=>r.json())
