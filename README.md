@@ -87,11 +87,12 @@ Reading cards: the left list is lazy-loaded. Scroll the list container itself (f
 
 Verifying a role without opening its page: load `https://www.linkedin.com/jobs/search/?currentJobId=<id>&keywords=lifecycle` and read the right-hand detail pane (`.jobs-search__job-details--wrapper`). It shows status, workplace type, the top-card salary and the full description, and does not need a screenshot.
 
-Screening: drop top of range under ~$120K, Senior Director / VP, specialist / associate / coordinator / account manager, contract or fractional, hybrid or on-site. Agencies and recruiters (Ladders, Jobgether, RemoteHive, "remote quest jobs") repost the same roles; link the employer's own posting instead.
+Screening: FULL-TIME ONLY (Kaylyn handles freelance work elsewhere; drop contract, temporary, fractional, freelance and part-time). Drop top of range under ~$120K, Senior Director / VP, specialist / associate / coordinator / account manager, contract or fractional, hybrid or on-site. Agencies and recruiters (Ladders, Jobgether, RemoteHive, "remote quest jobs") repost the same roles; link the employer's own posting instead.
 
 ### Step 2: Other sources (secondary)
 
 - Hightouch Lifecycle Leaders, pages 1 to 3.
+- **Braze Bonfire job board** (https://community.braze.com/categories/jobsboard) and **Iterable community job board** (https://community.iterable.com/job-board-22). Added 2026-10-19 at Kaylyn's request. Open each recent post and read it: most are EU, contract or hybrid. For any US-remote, full-time post, follow it to the employer's own posting (Greenhouse, Ashby, Lever, Workday, careers page or LinkedIn), confirm it is live, and link that employer posting on the dashboard, never the community post. If the post has no employer link (e.g. 'send your resume'), search the employer's careers page or LinkedIn for the role; skip it if you cannot find a live posting.
 - ZipRecruiter connector (working since 2026-10-19): `location_types:["REMOTE"]`, `max_posted_minutes_ago:20160`, `salary_min:120000`. Its salaries are often estimates; only show pay that the posting itself lists.
 - Lenny's Jobs: works when filters are set by hand (clear Job category, type "lifecycle", Location Remote or United States (remote)).
 - Google Jobs (`google.com/search?q=lifecycle+marketing+manager+remote&udm=8`, Date posted: Last week, Remote): mostly aggregator noise but occasionally surfaces a company-site posting. Use as a cross-check only. Her Google "Saved jobs" list is old and expired; ignore it.
