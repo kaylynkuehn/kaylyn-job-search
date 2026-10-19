@@ -95,7 +95,7 @@ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{typ
 fetch('history.json?ts='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const R=d.roles;
 document.title=d.person+"'s Job Search History";document.getElementById('h1').textContent=d.person+"'s Job Search History";
 const runs=d.runs.filter(x=>x.count!=null);document.getElementById('sub').textContent='Every role that has appeared on the dashboard since '+fmt(d.runs[0].date)+'. Last updated '+fmt(d.generated)+'.';
-const gone=R.filter(r=>r.status!=='open');const spans=gone.filter(r=>r.lastSeen).map(r=>(new Date(d10(r.lastSeen))-new Date(d10(r.firstSeen)))/864e5);
+const gone=R.filter(r=>r.status!=='open');const spans=gone.filter(r=>r.lastSeen&&r.seen&&r.seen.length).map(r=>(new Date(d10(r.lastSeen))-new Date(d10(r.firstSeen)))/864e5);
 const avg=spans.length?Math.round(spans.reduce((a,b)=>a+b,0)/spans.length):0;
 const sal=R.filter(r=>r.salaryMin).map(r=>r.salaryMin).sort((a,b)=>a-b);const med=sal.length?sal[Math.floor(sal.length/2)]:null;
 document.getElementById('tiles').innerHTML=[[R.length,'Roles tracked'],[R.filter(r=>r.status==='open').length,'Still listed'],[R.filter(r=>r.status==='closed').length,'Closed'],[R.filter(r=>r.status==='applied'||r.status==='rejected').length,'Applied'],[R.filter(r=>r.status==='rejected').length,'Rejected'],[runs.length+' / '+d.runs.length,'Runs with data'],[avg+' days','Avg time on list before leaving'],[med?'$'+Math.round(med/1000)+'K':'n/a','Median salary floor']].map(([v,l])=>'<div class="tile"><div class="v">'+v+'</div><div class="l">'+l+'</div></div>').join('');
