@@ -44,6 +44,7 @@ td a:hover { color: #2f6fed; text-decoration: underline; }
 .s-open { background: #e6f4ea; color: #1e7d44; }
 .s-closed { background: #fde8ec; color: #b3263e; }
 .s-applied { background: #1a1d21; color: #fff; }
+.s-rejected { background: #fff1e0; color: #9a4d00; }
 .s-dropped, .s-removed, .s-retitled { background: #eef1f4; color: #4a5361; }
 .muted { color: #8a94a2; }
 .note { font-size: 12px; color: #8a94a2; margin-top: 14px; }
@@ -78,7 +79,7 @@ td a:hover { color: #2f6fed; text-decoration: underline; }
 <div class="note" id="foot"></div>
 </div>
 <script>
-const LABEL={open:'Still listed',closed:'Closed',applied:'Applied',dropped:'Dropped',removed:'Gone',retitled:'Retitled'};
+const LABEL={open:'Still listed',closed:'Closed',applied:'Applied',dropped:'Dropped',removed:'Gone',retitled:'Retitled',rejected:'Rejected'};
 const d10=s=>(s||'').slice(0,10);
 const fmt=s=>{if(!s)return'';const d=new Date(d10(s)+'T00:00:00');return isNaN(d)?s:d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});};
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -97,7 +98,7 @@ const runs=d.runs.filter(x=>x.count!=null);document.getElementById('sub').textCo
 const gone=R.filter(r=>r.status!=='open');const spans=gone.filter(r=>r.lastSeen).map(r=>(new Date(d10(r.lastSeen))-new Date(d10(r.firstSeen)))/864e5);
 const avg=spans.length?Math.round(spans.reduce((a,b)=>a+b,0)/spans.length):0;
 const sal=R.filter(r=>r.salaryMin).map(r=>r.salaryMin).sort((a,b)=>a-b);const med=sal.length?sal[Math.floor(sal.length/2)]:null;
-document.getElementById('tiles').innerHTML=[[R.length,'Roles tracked'],[R.filter(r=>r.status==='open').length,'Still listed'],[R.filter(r=>r.status==='closed').length,'Closed'],[runs.length+' / '+d.runs.length,'Runs with data'],[avg+' days','Avg time on list before leaving'],[med?'$'+Math.round(med/1000)+'K':'n/a','Median salary floor']].map(([v,l])=>'<div class="tile"><div class="v">'+v+'</div><div class="l">'+l+'</div></div>').join('');
+document.getElementById('tiles').innerHTML=[[R.length,'Roles tracked'],[R.filter(r=>r.status==='open').length,'Still listed'],[R.filter(r=>r.status==='closed').length,'Closed'],[R.filter(r=>r.status==='applied'||r.status==='rejected').length,'Applied'],[R.filter(r=>r.status==='rejected').length,'Rejected'],[runs.length+' / '+d.runs.length,'Runs with data'],[avg+' days','Avg time on list before leaving'],[med?'$'+Math.round(med/1000)+'K':'n/a','Median salary floor']].map(([v,l])=>'<div class="tile"><div class="v">'+v+'</div><div class="l">'+l+'</div></div>').join('');
 const mx=Math.max(1,...runs.map(x=>x.count));
 document.getElementById('runs').innerHTML=d.runs.map(x=>'<div class="run" title="'+esc(x.note)+'">'+(x.count!=null?'<div class="n">'+x.count+'</div><div class="bar" style="height:'+(x.count/mx*120)+'px"></div>':'<div class="n muted">-</div><div class="bar none"></div>')+'<div class="d">'+esc(x.date.slice(5,10))+(x.date.length>10?'<br>'+esc(x.date.slice(11)):'')+'</div></div>').join('');
 bars('months',cnt(R,r=>new Date(d10(r.firstSeen)+'T00:00:00').toLocaleDateString('en-US',{month:'short',year:'numeric'})));
