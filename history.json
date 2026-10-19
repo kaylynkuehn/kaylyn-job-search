@@ -1,6 +1,6 @@
 {
  "person": "Kaylyn",
- "generated": "2026-10-09",
+ "generated": "2026-10-19",
  "runs": [
   {
    "date": "2026-09-28 draft",
@@ -16,6 +16,11 @@
    "date": "2026-10-05",
    "count": 22,
    "note": "Weekly refresh: 7 closed, 14 new (5 from the LinkedIn Job tracker saved list), 10 carried over. Evolve and Capital One applied same day."
+  },
+  {
+   "date": "2026-10-19",
+   "count": 38,
+   "note": "Weekly refresh: 4 closed, Alloy moved to in process, 20 new (2 from the LinkedIn saved list); Lyra (rejected Oct 14), Virta (applied Sep 28) and tonies (applied Sep 2) left off, 18 carried over. ZipRecruiter connector and Lenny's Jobs working again."
   }
  ],
  "roles": [
@@ -116,10 +121,10 @@
     "2026-09-28 final",
     "2026-10-05"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
-   "daysListed": null
+   "status": "closed",
+   "removedOn": "2026-10-19",
+   "reason": "Workday page no longer exists (Oct 19)",
+   "daysListed": 21
   },
   {
    "company": "Gametime",
@@ -184,7 +189,7 @@
   {
    "company": "KnowBe4",
    "title": "Snr. Manager, Email & Lifecycle Marketing",
-   "url": "https://job-boards.greenhouse.io/knowbe4/jobs/8778299002",
+   "url": "https://www.linkedin.com/jobs/view/4461326095/",
    "focus": "Email",
    "level": "Senior Manager",
    "industry": "Tech / SaaS",
@@ -192,11 +197,12 @@
    "salaryLabel": "$140K-$160K",
    "datePosted": "2026-09-02",
    "firstSeen": "2026-09-28 draft",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 draft",
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -274,11 +280,12 @@
    "salaryLabel": "$100K-$135K",
    "datePosted": "2026-09-19",
    "firstSeen": "2026-09-28 draft",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 draft",
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -457,10 +464,11 @@
    "salaryLabel": "",
    "datePosted": "2026-09-25",
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -498,10 +506,11 @@
    "salaryLabel": "",
    "datePosted": "2026-09-26",
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -519,10 +528,11 @@
    "salaryLabel": "",
    "datePosted": "2026-09-24",
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -540,10 +550,11 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -581,10 +592,11 @@
    "salaryLabel": "$104K-$144K",
    "datePosted": null,
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -642,10 +654,11 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -723,10 +736,11 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-09-28 final",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
     "2026-09-28 final",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -784,9 +798,10 @@
    "salaryLabel": "$115.5K-$165K",
    "datePosted": "2026-10-03",
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -804,9 +819,10 @@
    "salaryLabel": "$100K-$200K",
    "datePosted": "2026-10-03",
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -828,10 +844,10 @@
    "seen": [
     "2026-10-05"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
-   "daysListed": null
+   "status": "closed",
+   "removedOn": "2026-10-19",
+   "reason": "Ashby posting returns Job not found (Oct 19). Company reposted a different role, Lifecycle & Retention Lead",
+   "daysListed": 14
   },
   {
    "company": "Progyny",
@@ -844,9 +860,10 @@
    "salaryLabel": "$110K-$125K",
    "datePosted": "2026-10-02",
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -864,9 +881,10 @@
    "salaryLabel": "$93K-$145K",
    "datePosted": "2026-09-30",
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -884,9 +902,10 @@
    "salaryLabel": "$110K-$130K",
    "datePosted": "2026-10-01",
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -904,9 +923,10 @@
    "salaryLabel": "",
    "datePosted": "2026-10-01",
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -948,10 +968,10 @@
    "seen": [
     "2026-10-05"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
-   "daysListed": null
+   "status": "closed",
+   "removedOn": "2026-10-19",
+   "reason": "LinkedIn shows No longer accepting applications (Oct 19)",
+   "daysListed": 14
   },
   {
    "company": "BenefitHub",
@@ -964,9 +984,10 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -984,9 +1005,10 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -1008,10 +1030,10 @@
    "seen": [
     "2026-10-05"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
-   "daysListed": null
+   "status": "applied",
+   "removedOn": "2026-10-19",
+   "reason": "Kaylyn reapplied and is interviewing with the hiring manager",
+   "daysListed": 14
   },
   {
    "company": "Time Doctor",
@@ -1024,9 +1046,10 @@
    "salaryLabel": "",
    "datePosted": null,
    "firstSeen": "2026-10-05",
-   "lastSeen": "2026-10-05",
+   "lastSeen": "2026-10-19",
    "seen": [
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-19"
    ],
    "status": "open",
    "removedOn": null,
@@ -1051,6 +1074,466 @@
    "status": "applied",
    "removedOn": "2026-10-09",
    "reason": "Kaylyn found it on lifecyclemarketingjobs.com and applied; logged Oct 9. Never shown on the dashboard.",
+   "daysListed": null
+  },
+  {
+   "company": "Bask and Lather Co",
+   "title": "Director of Retention & Customer Lifecycle",
+   "url": "https://www.linkedin.com/jobs/view/4479601563/",
+   "focus": "Retention",
+   "level": "Director",
+   "industry": "DTC / Consumer",
+   "salaryMin": 180000,
+   "salaryLabel": "$180K-$200K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Parsley Health",
+   "title": "Director of Marketing",
+   "url": "https://job-boards.greenhouse.io/parsleyhealth/jobs/8033283003",
+   "focus": "Lifecycle",
+   "level": "Director",
+   "industry": "Health & Wellness",
+   "salaryMin": 160000,
+   "salaryLabel": "$160K-$190K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "PrizePicks",
+   "title": "Director, VIP Experience & Loyalty",
+   "url": "https://www.linkedin.com/jobs/view/4479618729/",
+   "focus": "Retention",
+   "level": "Director",
+   "industry": "Other",
+   "salaryMin": 140000,
+   "salaryLabel": "$140K-$180K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Credit Acceptance",
+   "title": "Senior Manager, Consumer Lifecycle Marketing",
+   "url": "https://creditacceptance.wd5.myworkdayjobs.com/Credit_Acceptance/job/USA---Remote/Senior-Manager--Consumer-Lifecycle-Marketing_R13993",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Fintech",
+   "salaryMin": 165000,
+   "salaryLabel": "$165K-$192K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Gusto",
+   "title": "Senior Lifecycle Marketing Manager",
+   "url": "https://www.ziprecruiter.com/jobs/v2/eyJsaXN0aW5nX2tleSI6IjlkSHNiWEtxWEhxQTNUay1OUmtpOVEiLCJtYXRjaF9pZCI6IjAxYTE1NGNlLTUwMTYtN2UyYi1iODljLWM0OTY3MDY0MjM0NCIsImJpZF90cmFja2luZ19kYXRhIjoiQUFFV05pTWQxUl80SllIQmptWHlOQnhPaWdjRWlIcGNEOS1xVVh3NDVlXzdPWEcxMndJelpIRURKdWJfb3EzQzJFSVZDNENHVmRaXzM1TW0iLCJzb3VyY2VfcGxhY2VtZW50X2lkIjo4Nzc1M30=?tsid=100000502",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Tech / SaaS",
+   "salaryMin": 158000,
+   "salaryLabel": "$158K-$197K (ZipRecruiter)",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Leap Health",
+   "title": "Senior Lifecycle Marketing Manager",
+   "url": "https://www.ziprecruiter.com/jobs/v2/eyJsaXN0aW5nX2tleSI6Im9rQjFxQkpFdHkteGJTTEVYazRNRmciLCJtYXRjaF9pZCI6IjAxYTE1NGNlLTUwMTYtN2UyNC1hZmQyLWM0NDg5MGYyNWI2YSIsImJpZF90cmFja2luZ19kYXRhIjoiQUFHSkhGUndOV3o0bHZDTWN4V2lZcjk0WHFOV01RRGE0RHJvcDl6NlNqU2FYMGV1S1Jrc2F6bDhKVDVVS21SemZ4M21lZjNSd0VIanhsUEUiLCJzb3VyY2VfcGxhY2VtZW50X2lkIjo4Nzc1M30=?tsid=100000502",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": 133000,
+   "salaryLabel": "$133K-$165K (ZipRecruiter)",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "MetaMask",
+   "title": "Senior Lifecycle Marketing Manager",
+   "url": "https://www.ziprecruiter.com/jobs/v2/eyJsaXN0aW5nX2tleSI6IkF1VDJtOFU4bzM1TUFSVHNZWDNGTlEiLCJtYXRjaF9pZCI6IjAxYTE1NGNlLTUwMTYtN2UyOS1hYzBmLTY4ZTMwNmYwNzFmYyIsImJpZF90cmFja2luZ19kYXRhIjoiQUFFTFlvaFdpRWw0SFZlMm5CcVBxSTRqQjVmS0NiZVB3N1BiOGdsTUxERmpVQ3JpVENMdEw2WTNuc09oanJvb2hjUGZNN29xV3RNMHhUTlEiLCJzb3VyY2VfcGxhY2VtZW50X2lkIjo4Nzc1M30=?tsid=100000502",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Fintech",
+   "salaryMin": 115000,
+   "salaryLabel": "$115K-$162K (ZipRecruiter)",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Ursa Major Skincare",
+   "title": "Sr Manager of Lifecycle & Retention Marketing",
+   "url": "https://www.linkedin.com/jobs/view/4476381929/",
+   "focus": "Retention",
+   "level": "Senior Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "First Stop Health",
+   "title": "Senior Manager, Lifecycle Marketing",
+   "url": "https://www.linkedin.com/jobs/view/4473258711/",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Tawkify",
+   "title": "Sr. Manager, Lifecycle Marketing and Engagement",
+   "url": "https://www.linkedin.com/jobs/view/4478401133/",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": 120000,
+   "salaryLabel": "Starting at $120K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Spring Health",
+   "title": "Senior Lifecycle Marketing Manager, Provider Marketing (Alma)",
+   "url": "https://www.linkedin.com/jobs/view/4476693040/",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": 121500,
+   "salaryLabel": "$121.5K-$140K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Care Access",
+   "title": "Senior Manager, Member Experience Marketing",
+   "url": "https://www.linkedin.com/jobs/view/4476075683/",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": 110000,
+   "salaryLabel": "$110K-$150K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "California Closets",
+   "title": "Sr Manager, CRM Campaign Strategy & Insights",
+   "url": "https://www.linkedin.com/jobs/view/4479738187/",
+   "focus": "CRM",
+   "level": "Senior Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": 130000,
+   "salaryLabel": "Starting at $130K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Weiss Ratings",
+   "title": "Senior Email & Subscription Marketing Manager",
+   "url": "https://www.linkedin.com/jobs/view/4475233139/",
+   "focus": "Email",
+   "level": "Senior Manager",
+   "industry": "Fintech",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Frontdoor",
+   "title": "Sr CRM Manager",
+   "url": "https://www.linkedin.com/jobs/view/4449973856/",
+   "focus": "CRM",
+   "level": "Senior Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Sword Health",
+   "title": "CRM Lead, B2B2C",
+   "url": "https://www.linkedin.com/jobs/view/4480566166/",
+   "focus": "CRM",
+   "level": "Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Sequencing",
+   "title": "Lifecycle & Retention Lead",
+   "url": "https://www.linkedin.com/jobs/view/4480573036/",
+   "focus": "Retention",
+   "level": "Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "ONNIT",
+   "title": "Retention & Lifecycle Marketing Manager",
+   "url": "https://www.linkedin.com/jobs/view/4479861082/",
+   "focus": "Retention",
+   "level": "Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": 110000,
+   "salaryLabel": "$110K-$150K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Petite Keep",
+   "title": "CRM & Retention Marketing Manager",
+   "url": "https://www.linkedin.com/jobs/view/4478740341/",
+   "focus": "CRM",
+   "level": "Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Brigit",
+   "title": "CRM Lifecycle Manager",
+   "url": "https://jobs.ashbyhq.com/brigit/13d25336-acbc-465f-937d-7625a19d5a5f",
+   "focus": "CRM",
+   "level": "Manager",
+   "industry": "Fintech",
+   "salaryMin": 110000,
+   "salaryLabel": "$110K-$130K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "",
+   "daysListed": null
+  },
+  {
+   "company": "Lyra Health",
+   "title": "Director, Engagement Strategy",
+   "url": "https://www.linkedin.com/jobs/view/4474668300/",
+   "focus": "Lifecycle",
+   "level": "Director",
+   "industry": "Health & Wellness",
+   "salaryMin": 150000,
+   "salaryLabel": "$150K-$206K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "applied",
+   "removedOn": "2026-10-19",
+   "reason": "Lyra emailed a rejection Oct 14. Was on your LinkedIn saved list; never shown on the dashboard.",
+   "daysListed": null
+  },
+  {
+   "company": "Virta Health",
+   "title": "Growth Campaign Manager, Lifecycle",
+   "url": "https://jobs.ashbyhq.com/virtahealth/19288813-ecfc-4551-85cb-0dbb6baeb605",
+   "focus": "Lifecycle",
+   "level": "Manager",
+   "industry": "Health & Wellness",
+   "salaryMin": 108500,
+   "salaryLabel": "$108.5K-$140.5K",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "applied",
+   "removedOn": "2026-10-19",
+   "reason": "Kaylyn applied Sep 28 (Ashby confirmation email). Never shown on the dashboard.",
+   "daysListed": null
+  },
+  {
+   "company": "tonies",
+   "title": "Senior Manager - Lifecycle Marketing, North America",
+   "url": "https://www.linkedin.com/jobs/view/4479137261/",
+   "focus": "Lifecycle",
+   "level": "Senior Manager",
+   "industry": "DTC / Consumer",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-10-19",
+   "lastSeen": "2026-10-19",
+   "seen": [
+    "2026-10-19"
+   ],
+   "status": "applied",
+   "removedOn": "2026-10-19",
+   "reason": "Kaylyn applied to tonies Sep 2; this Oct 16 listing looks like a repost. Never shown on the dashboard.",
    "daysListed": null
   }
  ]
